@@ -1,0 +1,18 @@
+body {
+    background-color: blue;
+}
+
+h1   {color: blue;;}
+h2   {color: rgb(255, 0, 255);}
+p    {color: rgb(255, 0, 0);}
+
+
+.news {
+    font-size: large;
+}
+.news:not([about="history"]) {background-color:darkblue; color:white}
+
+#bio {
+    font-style: italic
+    ;
+}
