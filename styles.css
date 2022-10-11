@@ -13,6 +13,20 @@ p    {color: rgb(255, 0, 0);}
 .news:not([about="history"]) {background-color:darkblue; color:white}
 
 #bio {
-    font-style: italic
-    ;
+    font-style: italic;
+}
+P1 {
+    color: rgb(13, 14, 13);
+    background-color: cyan;
+    display: inline;
+    padding-left: 10x;
+    padding-top: 10x;
+    border-radius: 5px;
+    border: solid 7px limegreen;
+    margin-top: 100px;
+    margin-left: 50px;
+    width: 50%;
+    min-width: 150px;
+    max-width: 200px;
+    position: sticky;
 }
