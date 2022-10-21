@@ -15,18 +15,41 @@ p    {color: rgb(255, 0, 0);}
 #bio {
     font-style: italic;
 }
-P1 {
-    color: rgb(13, 14, 13);
-    background-color: cyan;
-    display: inline;
-    padding-left: 10x;
-    padding-top: 10x;
-    border-radius: 5px;
-    border: solid 7px limegreen;
-    margin-top: 100px;
-    margin-left: 50px;
-    width: 50%;
-    min-width: 150px;
-    max-width: 200px;
-    position: sticky;
+.grid-container {
+    display: grid;
+    width: 100vh;  
+    height: 30vh;
+    grid-row: 02fr 1.5fr 1.2fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "header header header"
+                         "main empty sidebar"
+                         "footer footer footer";
+    grid-gap: 0.2em;
 }
+
+header{background-color: rgb(255, 128, 0);
+grid-area:header;}
+main{background-color: rgb(0, 157, 255);
+grid-area: main;}
+empty{background-color: hotpink;
+grid-area: empty;}
+sidebar{background-color: red;
+grid-area: sidebar;}
+footer{background-color: rgb(0, 255, 64);
+grid-area: footer}
+
+@media only screen and (max-width:30px)
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .flex-item-left {
+    flex: 50%;
+  }
+  
+  .flex-item-right {
+    flex: 50%;
+  }
+  
