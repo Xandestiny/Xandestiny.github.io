@@ -52,4 +52,34 @@ grid-area: footer}
   .flex-item-right {
     flex: 50%;
   }
-  
+  input[type=create] {
+    width: 10%;
+    background-color: #00b3ff;
+    color: white;
+    padding: 7px 10px;
+    margin: 4px 1;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    box-sizing:border-box ;
+  }
+  input[type=create]:hover {
+    background-color:#00b3ff;
+    .button {
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+      }
+      .form-control {
+        font-family: system-ui, sans-serif;
+        font-size: 2rem;
+        font-weight: bold;
+        line-height: 1.1;
+      }
